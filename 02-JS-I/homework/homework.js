@@ -26,57 +26,41 @@ const nuevoModulo = 21 % 5 === 1;
 // No cambies los nombres de las funciones.
 
 function devolverString(str) {
-  var nombre = (str)
   return str; 
   // "Return" la string provista: str
   // Tu código: 
 }
-var nombramiento = devolverString('Samuel');
-console.log (nombramiento);
 
 function suma(x, y) {
-  var sumar = x + y;
-  return sumar;
+  return x+y;
 
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
   
 }
-var sumatoria = suma(5, 20);
-console.log (sumatoria);
 
 function resta(x, y) {
-  var restar = x - y;
-  return restar;
+  return x-y;
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   
 }
-var resultado = resta(3,5);
-console.log (resultado);
-
 
 function multiplica(x, y) {
-  var multiplicar = x * y;
-  return multiplicar;
+  return x * y;
 
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
 
 }
-var multiplicacion = multiplica (8,5);
-console.log (multiplicacion);
 
 function divide(x, y) {
-  var dividir = x / y;
-  return dividir;
+  return x/y;
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
   
 }
-var division = divide(21,5)
-console.log (division)
 
 function sonIguales(x, y) {
   if (x == y) {
@@ -93,7 +77,11 @@ function sonIguales(x, y) {
 
 function tienenMismaLongitud(str1, str2) {
 
-  return str1.lenght === str2.lenght;
+  if  (str1.lenght === str2.lenght){
+    return true; }
+
+    return false;
+    
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -117,7 +105,13 @@ function menosQueNoventa(num) {
 }
 
 function mayorQueCincuenta(num) {
-  return num > 50; 
+  if (num > 50){
+    return true;
+  }
+  else {
+
+  return false;
+  }
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
@@ -134,11 +128,11 @@ function obtenerResto(x, y) {
 
 function esPar(num) {
 
-  if (num % 2 === 1) {
-    return false;
+  if (num % 2 === 0) {
+    return true;
   }
   else{
-    return true; 
+    return false; 
   }
 
   // Devuelve "true" si "num" es par
@@ -149,7 +143,7 @@ function esPar(num) {
 
 function esImpar(num) {
 
-  if (num % 3 === 2) {
+  if (num % 2 === 1) {
     return true;
   }
   else{
@@ -208,7 +202,8 @@ function esPositivo(numero) {
   if(numero === 0) {
     return false;
   }
-  else if(numero > 0) {
+  else 
+  if(numero > 0) {
     return "Es positivo";
   }
   else {
