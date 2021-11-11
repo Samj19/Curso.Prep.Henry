@@ -95,7 +95,7 @@ function menosQueNoventa(num) {
   }
     else {
   
-    return true;
+    return false;
     }
    
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
@@ -232,7 +232,7 @@ function combinarNombres(nombre, apellido) {
 }
 
 function obtenerSaludo(nombre) {
-  return 'Hola'+nombre;
+  return ('Hola'+ nombre);
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
