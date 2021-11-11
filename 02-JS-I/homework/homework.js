@@ -77,8 +77,10 @@ function sonIguales(x, y) {
 
 function tienenMismaLongitud(str1, str2) {
 
-  return str1.lenght === str2.lenght;
+  if  (str1.length === str2.length){
+    return true; }
 
+    return false;
 
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
